@@ -117,6 +117,9 @@ header.top-menu{
 	left:10px;
 	height: 18px;
 }
+.phone{
+	color:#fff;
+}
 input,button{
 	transition: .2s;
 	outline:none!important;
