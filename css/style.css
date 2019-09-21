@@ -1,8 +1,11 @@
 .container{
 	max-width: 960px;
-	padding:0 15px;
+	padding:0 10px;
 	margin: auto;
 	width: 100%;
+}
+*,html{
+	box-sizing: border-box;
 }
 body{
 	margin: 0;
@@ -55,7 +58,7 @@ header.top-menu{
 	height: 5px;
 	background-color: #b52933;
 }
-.top-navigation{
+.top-navigation nav{
 	display: -webkit-flex;
 	display: -moz-flex;
 	display: -ms-flex;
@@ -70,9 +73,11 @@ header.top-menu{
 .top-navigation-input-search{
 	height: 100%;
 	width: 270px;
-	height: 42px;
 	background-color: #293449;
 	color:#000;
+	min-height: 42px;
+	height: 42px;
+	padding:8px 16px 8px 45px;
 }
 .top-navigation-input-search:hover{
 	background-color: #212a3a;
@@ -144,6 +149,7 @@ button.ship-active{
 	max-width: 160px;
 	line-height: 42px;
 	height: auto;
+	height: 100%;
 	text-align: center;
 	color:#fff;
 	font-size: 18px;
@@ -180,6 +186,7 @@ background-color: #161d29;
 	font-size: 18px;
 }
 .top-navigation-menu-list{
+	overflow: hidden;
 	width: 100%;
 	display: -webkit-flex;
 	display: -moz-flex;
@@ -218,10 +225,11 @@ ul{
 	color:#868c95;
 }
 .main-title{
-	max-width: 220px;
+	max-width: 320px;
 	color:red;
 	font-size: 17px;
 	padding:0 45px;
+	margin-right: 20px;
 }
 .top-site-information{
 	display: -webkit-flex;
@@ -230,10 +238,10 @@ ul{
 	display: -o-flex;
 	padding:44px 0;
 	display: flex;
-	justify-content: space-between;
 	align-items: center;
 }
 .contacts-top-menu{
+	max-width: 320px;
 	text-align: center;
 	font-family: 'Cuprum', Arial, sans-serif;
 }
@@ -253,6 +261,10 @@ ul{
 	color:#ee3643;
 	font-size: 21px;
 }
+.autorization-block{
+	padding: 15px;
+	margin-left: auto;
+}
 .autorization-block a{
 	font-size: 21px;
 	font-weight: bold;
@@ -265,6 +277,15 @@ ul{
 }
 .autorization-block a:active{
 	color:#c5c5c5;
+}
+.special-orders{
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
 }
 .wrapper-page{
 	margin-top: 60px;
@@ -305,31 +326,31 @@ ul{
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
-	width: 254px;
-	padding:23px;
+	width: 300px;
+	padding:20px;
 	max-height: 125px;
 	position: relative;
 	overflow: hidden;
 	margin-bottom: 20px;
 }
-.banner{
+.categories-banner-list li{
 	background-repeat: no-repeat;
 	background-position: right center;
 	background-origin: content-box;
 }
-.banner.materials{
+.materials{
 	background-image: url(../img/icon-paint.png);
 }
-.banner.shipping{
+.shipping{
 	background-image: url(../img/icon-shipping.png);
 }
-.banner.instrument{
+.instrument{
 	background-image: url(../img/icon-instrument.png);
 }
-.banner.cars{
+.cars{
 	background-image: url(../img/icon-technical.png);
 }
-.banner.sale{
+.sale{
 	background-image: url(../img/icon-market.png);
 }
 .categories-vertical{
@@ -410,11 +431,21 @@ p{
 	font-family: 'PT Sans Regular';
 	font-size: 14px;
 }
+.company-info{
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
 .about-company{
-	max-width: 540px;
+	max-width: 550px;
+	width: 100%;
 }
 .contacts-company{
-	max-width: 320px;
+	max-width: 310px;
 }
 .section-description{
 	margin: 40px 0;
@@ -468,13 +499,14 @@ p{
 	background-color: #ba2732;
 }
 .big-btn{
+	max-width: 300px;
 width: 100%;
 }
 .half-btn{
 width: 220px;
 }
 .location{
-	margin-bottom: 40px;
+	margin-bottom: 27px;
 	display: block;
 	height: 160px;
 }
@@ -485,6 +517,9 @@ footer{
 	color:#fff;
 	margin-top: 80px;
 }
+footer p{
+	margin: 0;
+}
 footer .logotype{
 	margin-bottom: 30px;
 	height: 65px;
@@ -493,12 +528,30 @@ footer .logotype{
 	background-color: #32425c;
 	min-height: 190px;
 }
+.title-section{
+	margin:20px 0;
+	padding: 0 25px;
+	min-height: 90px;
+	background-color: #f9f5f0;
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	align-items: center;
+}
+.title-section a{
+	width: 254px;
+}
 .footer-row{
 	display: -webkit-flex;
 	display: -moz-flex;
 	display: -ms-flex;
 	display: -o-flex;
 	justify-content: space-between;
+	align-items: center;
 	display: flex;
 }
 .footer-nav ul{
@@ -541,15 +594,6 @@ footer .categories-navigation li a:active{
 	color:#998a6e;
 	text-decoration: none;
 }
-.copyright-wrapper, .footer-copyright{
-	display: -webkit-flex;
-	display: -moz-flex;
-	display: -ms-flex;
-	display: -o-flex;
-	display: flex;
-	align-items: center;
-	justify-content: space-between;
-}
 .social-links{
 	display: -webkit-flex;
 	display: -moz-flex;
@@ -564,13 +608,6 @@ footer .social-links a{
 }
 footer .social-links a:hover{
 	color:#ee3643;
-}
-.copyright-block{
-	display: -webkit-flex;
-	display: -moz-flex;
-	display: -ms-flex;
-	display: -o-flex;
-	display: flex;
 }
 .copyright-block a{
 	color:#ffd180;
@@ -711,6 +748,9 @@ button{
 .button-show{
 	padding:14px 28px;
 }
+.popular-products .catalog-items{
+	width: 100%;
+}
 .catalog-items{
 	width: 78%;
 	display: -webkit-flex;
@@ -725,9 +765,8 @@ button{
 	transition: .2s;
 	margin-bottom: 18px;
 	width: 100%;
-	max-width: 195px;
-	height: 280px;
-	padding: 21px;
+	max-width: 220px;
+	min-height: 320px;
 	border:1px solid #e5e5e5;
 }
 .item:hover{
@@ -738,19 +777,19 @@ button{
 	text-decoration: none;
 }
 .item-title{
+	padding: 0 20px;
 	font-family: 'PT Sans', sans-serif!important;
-	margin:12px 0;
+	margin-top: 12px;
+	margin-bottom: 14px;
 	font-weight: bold;
 	font-size: 18px;
 	text-align: center;
 }
-.item-image{
-	background-color: #e5e5e5;
-	width: 100%;
-	height: 100%;
-	max-height: 150px;
+.item-title a{
+	color:#000;
 }
-.item-image img{
+.item img{
+	max-height: 150px;
 	width: 100%;
 	height: 100%;
 }
@@ -846,4 +885,7 @@ button{
 }
 .description{
 	margin-top: 36px;
+}
+.contacts-company p{
+	max-width: 70%;
 }
