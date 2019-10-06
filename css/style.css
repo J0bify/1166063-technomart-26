@@ -17,7 +17,7 @@ a{
 }
 header.top-menu{
 	width: 100%;
-	margin-bottom: 80px;
+	margin-bottom: 60px;
 }
 .top-navigation{
 	height:42px;
@@ -113,6 +113,7 @@ header.top-menu{
 	display: -o-flex;
 	display: flex;
 	height: 100%;
+	width: 240px;
 	align-items: center;
 }
 .input-search .label-icon img{
@@ -203,6 +204,7 @@ ul{
 	margin: 0;
 }
 .menu-list-item{
+width: 100%;
 }
 .menu-list-item a{
 	color:#fff;
@@ -210,8 +212,8 @@ ul{
 	text-decoration: none;
 	align-items: center;
 	min-height: 55px;
-	display: block;
-	padding:0px 37px;
+	display: flex;
+	justify-content: center;
 	text-align: center;
 	line-height: 55px;
 	background-color: #32425c;
@@ -236,9 +238,9 @@ ul{
 	display: -moz-flex;
 	display: -ms-flex;
 	display: -o-flex;
-	padding:44px 0;
+	padding:35px 0;
 	display: flex;
-	align-items: center;
+	align-items: flex-end;
 }
 .contacts-top-menu{
 	max-width: 320px;
@@ -246,6 +248,7 @@ ul{
 	font-family: 'Cuprum', Arial, sans-serif;
 }
 .contacts-top-menu p{
+	margin: 0;
 	font-size: 14px;
 	color:#32425c;
 	font-weight: bold;
@@ -262,14 +265,16 @@ ul{
 	font-size: 21px;
 }
 .autorization-block{
+	max-width: 360px;
 	padding: 15px;
+	margin-bottom: 30px;
 	margin-left: auto;
 }
 .autorization-block a{
 	font-size: 21px;
 	font-weight: bold;
 	background-color: #fff;
-	padding:8px 15px;
+	padding:8px 22px;
 	color:#000;
 }
 .autorization-block a:hover{
@@ -279,6 +284,7 @@ ul{
 	color:#c5c5c5;
 }
 .special-orders{
+	margin-top: 125px;
 	display: -webkit-flex;
 	display: -moz-flex;
 	display: -ms-flex;
@@ -318,19 +324,19 @@ ul{
 	justify-content: space-between;
 }
 .categories-banner-list li{
-	color:#fff;
-	display: -webkit-flex;
-	display: -moz-flex;
-	display: -ms-flex;
-	display: -o-flex;
-	display: flex;
-	align-items: center;
-	justify-content: space-between;
-	width: 300px;
-	padding:20px;
-	max-height: 125px;
-	position: relative;
-	overflow: hidden;
+	color: #fff;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 300px;
+    padding: 22px 38px 22px 22px;
+    max-height: 125px;
+    position: relative;
+    overflow: hidden;
 	margin-bottom: 20px;
 }
 .categories-banner-list li{
@@ -339,19 +345,19 @@ ul{
 	background-origin: content-box;
 }
 .materials{
-	background-image: url(../img/icon-paint.png);
+	background-image: url(../svg/icon-1.svg);
 }
 .shipping{
-	background-image: url(../img/icon-shipping.png);
+	background-image: url(../svg/icon-5.svg);
 }
 .instrument{
-	background-image: url(../img/icon-instrument.png);
+	background-image: url(../svg/icon-2.svg);
 }
 .cars{
-	background-image: url(../img/icon-technical.png);
+	background-image: url(../svg/icon-3.svg);
 }
 .sale{
-	background-image: url(../img/icon-market.png);
+	background-image: url(../svg/icon-4.svg);
 }
 .categories-vertical{
 	max-width: 300px;
@@ -384,14 +390,15 @@ ul{
 	right: -21px;
 }
 .categories-banner-list .banner-info a{
-	padding: 12px 20px;
-	transition: .2s;
-	font-size: 14px;
-	display: block;
-	margin-top: 16px;
-	color:#fff;
-	background-color: rgba(0, 0, 0, 0.1);
-	border-radius: 3px;
+	padding: 11px 20px;
+    width: 140px;
+    transition: .2s;
+    font-size: 14px;
+    display: block;
+    margin-top: 18px;
+    color: #fff;
+    background-color: rgba(0, 0, 0, 0.1);
+    border-radius: 3px;
 	text-transform: uppercase;
 }
 .categories-banner-list .banner-info a:hover{
@@ -529,17 +536,17 @@ footer .logotype{
 	min-height: 190px;
 }
 .title-section{
-	margin:20px 0;
-	padding: 0 25px;
-	min-height: 90px;
-	background-color: #f9f5f0;
-	display: -webkit-flex;
-	display: -moz-flex;
-	display: -ms-flex;
-	display: -o-flex;
-	display: flex;
-	flex-wrap: wrap;
-	justify-content: space-between;
+margin: 30px 0;
+    padding: 0 25px;
+    min-height: 90px;
+    background-color: #f9f5f0;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
 	align-items: center;
 }
 .title-section a{
@@ -577,6 +584,7 @@ footer .page-navigation:active{
 	text-decoration: underline;
 }
 .footer-copyright{
+	padding:30px 0;
 	background-color: #293449;
 	min-height: 110px;
 }
@@ -603,11 +611,30 @@ footer .categories-navigation li a:active{
 	list-style: none;
 }
 footer .social-links a{
+	transition: .4s;
 	color:#fff;
 	margin: 5px;
+	width: 40px;
+	height: 40px;
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	line-height: 40px;
+	text-align: center;
+	border-radius: 50%;
+	background-color: #212a3a;
+}
+footer .social-links a img{
+	max-width: 26px;
+	max-height: 25px;
 }
 footer .social-links a:hover{
 	color:#ee3643;
+	background-color: #ee3643;
 }
 .copyright-block a{
 	color:#ffd180;
@@ -619,16 +646,17 @@ footer .social-links a:hover{
 	color:#998a6e;
 }
 .page-title{
-	margin-bottom: 24px;
-	text-transform: uppercase;
-	font-weight: bold;
-	font-size: 30px;
+	margin-bottom: 100px;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 30px;
+    padding: 0px 23px;
 }
 .section-title{
 	margin-bottom: 18px;
 	text-transform: uppercase;
 	font-weight: bold;
-	font-size: 24px;
+	font-size: 28px;
 }
 .breadcrumbs{
 	display: -webkit-flex;
@@ -637,7 +665,7 @@ footer .social-links a:hover{
 	display: -o-flex;
 	list-style: none;
 	display: flex;
-	padding:25px;
+	padding:25px 50px;
 	background-color: #fff;
 }
 .breadcrumbs li{
@@ -721,8 +749,8 @@ footer .social-links a:hover{
 	margin-right: 16px;
 }
 aside{
-	width: 20%;
-	margin-right: 16px;
+	width: 230px;
+	margin-right: 10px;
 }
 button{
 	font-family: 'PT Sans Narrow', Arial, sans-serif;
@@ -752,21 +780,22 @@ button{
 	width: 100%;
 }
 .catalog-items{
-	width: 78%;
+	width: 700px;
 	display: -webkit-flex;
 	display: -moz-flex;
 	display: -ms-flex;
 	display: -o-flex;
 	display: flex;
 	flex-wrap: wrap;
-	justify-content: space-between;
 }
 .item{
 	transition: .2s;
 	margin-bottom: 18px;
+	margin-right: 18px;
 	width: 100%;
 	max-width: 220px;
 	min-height: 320px;
+	max-height: 320px;
 	border:1px solid #e5e5e5;
 }
 .item:hover{
@@ -775,12 +804,13 @@ button{
 .item-link{
 	color:#000;
 	text-decoration: none;
+	display: block;
 }
 .item-title{
 	padding: 0 20px;
 	font-family: 'PT Sans', sans-serif!important;
-	margin-top: 12px;
-	margin-bottom: 14px;
+	margin-top: 25px;
+	margin-bottom: 8px;
 	font-weight: bold;
 	font-size: 18px;
 	text-align: center;
