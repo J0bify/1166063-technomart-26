@@ -1329,6 +1329,7 @@ button{
 	min-height: 450px;
 }
 .modal-cart{
+	border-top:8px solid #ff5357;
 	animation:modal-in 1s;
 	position: absolute;
 	top: 50%;
