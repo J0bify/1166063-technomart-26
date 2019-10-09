@@ -797,7 +797,7 @@ footer .categories-navigation li a:active{
 	display: flex;
 	list-style: none;
 }
-footer .social-links a{
+.social-link{
 	transition: .4s;
 	color:#fff;
 	margin: 5px;
@@ -815,11 +815,11 @@ footer .social-links a{
 	border-radius: 50%;
 	background-color: #212a3a;
 }
-footer .social-links a img{
+.social-link img{
 	max-width: 26px;
 	max-height: 25px;
 }
-footer .social-links a:hover{
+.social-links .social-link:hover{
 	color:#ee3643;
 	background-color: #ee3643;
 }
@@ -1039,7 +1039,7 @@ label input[type="checkbox"]:checked + .checkbox__text:after {
 .radio input:focus + .radio__text:before {
 	background-image: url(../svg/radio-off.svg);
 }
-aside{
+.left-side{
 	width: 210px;
 	margin-right: 10px;
 }

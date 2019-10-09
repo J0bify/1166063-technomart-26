@@ -97,7 +97,7 @@
             </ul>
             <h2 class="page-title">Перфораторы</h2>
             <section class="catalog-wrapper">
-                <aside>
+                <aside class="left-side">
                     <form action="http://echo.htmlacademy.ru" method="POST">
                         <h2 class="categories-title">Производители:</h2>
                         <div class="checkbox-group">
@@ -138,8 +138,8 @@
                                 <button class="button item-button add-to-bookmark">В закладки</button>
                             </div>
                             <img src="img/perforator.png" alt="Перфоратор BOSCH BFG 3000" title="Перфоратор BOSCH BFG 3000" width="220px" height="180px">
-                            <h3 class="item-title"><a href="#" title="Перфоратор BOSCH BFG 3000">Перфоратор <q>BOSCH BFG 3000</q></a></h3>
                         </a>
+                            <h3 class="item-title"><a href="#" title="Перфоратор BOSCH BFG 3000">Перфоратор <q>BOSCH BFG 3000</q></a></h3>
                         <div class="item-price">
                             <div class="old-price"><del>22500 ₽</del></div>
                             <span class="price">2990 ₽</span>
@@ -157,8 +157,8 @@
                                 <button class="button item-button add-to-bookmark">В закладки</button>
                             </div>
                             <img src="img/perforator.png" alt="Перфоратор BOSCH BFG 3000" title="Перфоратор BOSCH BFG 3000" width="220px" height="180px">
-                            <h3 class="item-title"><a href="#" title="Перфоратор BOSCH BFG 3000">Перфоратор <q>BOSCH BFG 3000</q></a></h3>
                         </a>
+                            <h3 class="item-title"><a href="#" title="Перфоратор BOSCH BFG 3000">Перфоратор <q>BOSCH BFG 3000</q></a></h3>
                         <div class="item-price">
                             <div class="old-price"><del>22500 ₽</del></div>
                             <span class="price">2990 ₽</span>
@@ -176,8 +176,8 @@
                                 <button class="button item-button add-to-bookmark">В закладки</button>
                             </div>
                             <img src="img/perforator.png" alt="Перфоратор BOSCH BFG 3000" title="Перфоратор BOSCH BFG 3000" width="220px" height="180px">
-                            <h3 class="item-title"><a href="#" title="Перфоратор BOSCH BFG 3000">Перфоратор <q>BOSCH BFG 3000</q></a></h3>
                         </a>
+                            <h3 class="item-title"><a href="#" title="Перфоратор BOSCH BFG 3000">Перфоратор <q>BOSCH BFG 3000</q></a></h3>
                         <div class="item-price">
                             <div class="old-price"><del>22500 ₽</del></div>
                             <span class="price">2990 ₽</span>
@@ -185,6 +185,7 @@
                     </article>
                     <article class="item">
                         <a href="#" class="item-link">
+                            <span class="new-flag">new</span>
                             <div class="item-hidden-block">
                                 <button class="button add-to-cart item-button">
                                     <svg class="cart-icon icon">
@@ -195,8 +196,8 @@
                                 <button class="button item-button add-to-bookmark">В закладки</button>
                             </div>
                             <img src="img/perforator.png" alt="Перфоратор BOSCH BFG 3000" title="Перфоратор BOSCH BFG 3000" width="220px" height="180px">
-                            <h3 class="item-title"><a href="#" title="Перфоратор BOSCH BFG 3000">Перфоратор <q>BOSCH BFG 3000</q></a></h3>
                         </a>
+                            <h3 class="item-title"><a href="#" title="Перфоратор BOSCH BFG 3000">Перфоратор <q>BOSCH BFG 3000</q></a></h3>
                         <div class="item-price">
                             <div class="old-price"><del>22500 ₽</del></div>
                             <span class="price">2990 ₽</span>
@@ -221,7 +222,7 @@
             <div class="container">
                 <div class="footer-row">
 
-                    <a class="logotype">
+                    <a class="logotype" href="index.html">
                         Техномарт
                     </a>
                     <nav class="footer-nav">
@@ -260,13 +261,13 @@
                     </div>
                     <ul class="social-links">
                         <li>
-                            <a href="#"><img src="svg/icon-vk.svg" alt="Мы в ВК"></a>
+                            <a href="#" class="social-link"><img src="svg/icon-vk.svg" alt="Мы в ВК"></a>
                         </li>
                         <li>
-                            <a href="#"><img src="svg/icon-fb.svg" alt="Мы в Фейсбук"></a>
+                            <a href="#" class="social-link"><img src="svg/icon-fb.svg" alt="Мы в Фейсбук"></a>
                         </li>
                         <li>
-                            <a href="#"><img src="svg/icon-insta.svg" alt="Мы в Инстаграм"></a>
+                            <a href="#" class="social-link"><img src="svg/icon-insta.svg" alt="Мы в Инстаграм"></a>
                         </li>
                     </ul>
                     <div class="copyright-block">
@@ -303,29 +304,7 @@
                 <div class="modal-overlay"></div>
 
     </div>
-    <script type="text/javascript">
-        var showCart = document.querySelector(".add-to-cart");
-        var popupCart = document.querySelector(".modal-wrapper");
-        var closeCart = document.querySelector(".modal-cart .close-btn");
-        var popupCartOverlay = document.querySelector(".modal-overlay");
-
-        showCart.addEventListener("click", function(evt){
-            evt.preventDefault();
-            popupCart.classList.add("modal-show");
-        });
-        popupCart.addEventListener("click", function(evt){
-            evt.preventDefault();
-            popupCart.classList.add("modal-show");
-        });
-        closeCart.addEventListener("click", function(evt){
-            evt.preventDefault();
-            popupCart.classList.remove("modal-show");
-        });
-        popupCartOverlay.addEventListener("click", function(evt){
-            evt.preventDefault();
-            popupCart.classList.remove("modal-show");
-        });
-    </script>
+    <script type="text/javascript" src="js/cart.js"></script>
 </body>
 
 </html>
