@@ -285,20 +285,23 @@ width: 100%;
 	color:#868c95;
 }
 .main-title{
-	max-width: 320px;
-	color:red;
-	font-size: 17px;
-	padding:0 45px;
-	margin-right: 20px;
+	max-width: 290px;
+    color: red;
+    font-size: 17px;
+    padding: 0px 35px;
 }
 .top-site-information{
 	display: -webkit-flex;
 	display: -moz-flex;
 	display: -ms-flex;
 	display: -o-flex;
-	padding:35px 0;
+	padding:45px 0;
 	display: flex;
-	align-items: center;
+	justify-content: space-between;
+	align-items: flex-start;
+}
+.top-site-information svg{
+	margin-right: 8px;
 }
 .contacts-top-menu{
 	max-width: 320px;
@@ -1072,13 +1075,13 @@ button{
 	display: -o-flex;
 	display: flex;
 	flex-wrap: wrap;
+	justify-content: space-between;
 }
 .item{
 	overflow: hidden;
 	position: relative;
 	transition: .2s;
 	margin-bottom: 15px;
-	margin-right: 15px;
 	width: 100%;
 	max-width: 220px;
 	min-height: 320px;
@@ -1205,4 +1208,192 @@ button{
 }
 .contacts-company p{
 	max-width: 70%;
+}
+@keyframes modal-in{
+	0%{
+		transform:translate(-50%,-100%);
+	}
+	50%{
+		transform:translate(-50%,-40%);
+	}
+	100%{
+		transform: translate(-50%,-50%);
+	}
+}
+.modal-content{
+	animation:modal-in 2s;
+}
+.modal-write-us{
+	width: 100%;
+	position: absolute;
+	max-width: 620px;
+	margin: auto;
+	left:50%;
+	top:50%;
+	transform:translate(-50%,-50%);
+	min-height: 430px;
+	background-color: #fff;
+	border-top:8px solid #ff5357;
+	box-shadow: 0 15px 45px rgba(0,0,0,0.6);
+}
+.modal-wrapper{
+	display: none;
+	height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    position: fixed;
+    z-index: 100;
+}
+
+.modal-overlay{
+	background-color: rgba(0,0,0,0.2);
+	position: fixed;
+	z-index: -1;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+.close-btn{
+	position: absolute;
+	right: 15px;
+	top: 15px;
+	transform:rotate(0deg);
+	cursor:pointer;
+	background-color: transparent;
+	margin-right: auto;
+}
+.close-btn:hover{
+	transform:rotate(45deg);
+}
+.modal-write-us form{
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	padding: 25px 80px;
+	justify-content: space-between;
+	flex-wrap: wrap;
+}
+.modal-write-us form p{
+	font-weight: bold;
+	font-size: 18px;
+	font-family: 'Cuprum', 'Arial', sans-serif;
+}
+.default-input{
+	font-family: 'PT Sans';
+	margin-bottom: 18px;
+	padding: 15px;
+	min-width: 220px;
+	height: 40px;
+	border-radius: 3px;
+	border:2px solid #dee3e4;
+}
+.default-input::placeholder{
+	color:#ccc;
+}
+.default-input:hover{
+	border:2px solid #b5b5b5;
+}
+.default-input:focus{
+	outline: none;
+	border:2px solid #ee3643;
+}
+.modal-write-us form textarea{
+	width: 100%;
+	height: 115px;
+	max-height: 140px;
+}
+.modal-write-us form button[type="submit"]{
+	width: 100%;
+}
+.modal-map{
+	display: none;
+}
+.modal-map-show{
+	display: block;
+}
+.modal-show{
+	display: block;
+}
+.modal-show-map{
+	position: fixed;
+	background-color: #fff;
+	top:50%;
+	left:50%;
+	transform:translate(-50%,-50%);
+	max-width: 940px;
+	width: 100%;
+	min-height: 450px;
+}
+.modal-cart{
+	animation:modal-in 1s;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	background-color: #fff;
+	transform:translate(-50%,-50%);
+	max-width: 620px;
+	width: 100%;
+	box-shadow: 0 15px 45px rgba(0,0,0,0.6);
+	min-height: 280px;
+}
+.modal-cart .modal-body{
+	padding:50px 80px;
+}
+.modal-wrapper .white-btn{
+	cursor: pointer;
+	height: 40px;
+	width: 220px;
+	background-color: #fff;
+	border:1px solid #e5e5e5;
+}
+.modal-wrapper .white-btn:hover{
+	filter: brightness(95%);
+}
+.button-group{
+	justify-content: center;
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+}
+.button-group button{
+	font-family: 'Cuprum';
+	font-size: 14px;
+	margin: 15px;
+	border-radius: 3px;
+}
+.item-add-to-cart{
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	align-items: center;
+	display: flex;
+	justify-content: flex-start;
+}
+@keyframes pulse{
+	0%{
+		transform:scale(0);
+	}
+	100%{
+		transform:scale(1);
+	}
+}
+.item-add-to-cart svg{
+	animation:pulse 0.6s;
+	margin-right: 26px;
+}
+.modal-cart .modal-footer{
+	padding: 25px;
+	background-color: #f1f1f1;
+}
+.item-add-to-cart p{
+	font-family: 'Cuprum';
+	font-size: 30px;
+	font-weight: bold;
 }

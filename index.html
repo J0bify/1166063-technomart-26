@@ -39,7 +39,7 @@
         <div class="top-site-information container">
             <h1 class="main-title"><i>Интернет-магазин строительных материалов и инструментов для ремонта</i></h1>
             <div class="contacts-top-menu">
-                <a href="tel:+78125550555" class="phone" title="Наш номер телефона">+7 (812) 555-05-55</a>
+                <a href="tel:+78125550555" class="phone" title="Наш номер телефона"><svg xmlns="http://www.w3.org/2000/svg" width="19" height="19" viewBox="0 0 19 19"><path fill="#B7BFC8" d="M15.572 18.985h-.941c-4.129-.488-7.157-2.408-9.359-4.864C3.062 11.66 1.318 8.492.978 4.228V3.084c.078-.774.459-1.304.898-1.757C2.425.766 3.25.044 4.002.019c.554-.018 1.5.38 1.879.899.329.446.504 1.339.656 2.003.154.671.505 1.643.408 2.289-.148 1.007-1.487 1.434-1.879 2.166 1.307 3.135 3.443 5.439 6.293 7.031.715-.392 1.346-1.572 2.332-1.595.359-.009.818.178 1.184.286.402.121.75.275 1.104.408.596.224 1.648.521 2.004 1.021.365.513.57 1.356.49 1.879-.164 1.041-1.879 2.197-2.901 2.579z"/></svg>+7 (812) 555-05-55</a>
                 <p>г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
             </div>
             <div class="autorization-block">
@@ -211,10 +211,10 @@
             <div class="contacts-company">
                 <h2 class="section-title">Контакты</h2>
                 <p class="section-description">Вы можете забрать товар сами, заехав в наш офис:</p>
-                <a href="#" class="location" title="Наш офис находится по адресу: г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8">
+                <a href="#" class="location show-map-link" title="Наш офис находится по адресу: г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8">
                     <img src="img/map-location.png" alt="Наш офис находится по адресу: г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8" width="300px" height="158px">
                 </a>
-                <a href="#" class="red-btn big-btn" title="Форма обратной связи">Заблудились? Напишите нам</a>
+                <a href="#" class="red-btn big-btn button-show-modal" title="Форма обратной связи">Заблудились? Напишите нам</a>
             </div>
             <!-- end-contacts-company -->
         </section>
@@ -285,6 +285,143 @@
             </div>
         </div>
     </footer>
+    <div class="modal-wrapper modal-form">
+        <div class="modal-content modal-write-us">
+                <button class="close-btn">
+                    <svg enable-background="new 0 0 21 21" height="21" viewBox="0 0 21 21" width="21" xmlns="http://www.w3.org/2000/svg">
+                        <path d="m13.273 10.5 7.422-7.422c.389-.389.389-1.025 0-1.414l-1.359-1.359c-.389-.389-1.025-.389-1.414 0l-7.422 7.422-7.422-7.422c-.389-.389-1.025-.389-1.414 0l-1.359 1.359c-.389.389-.389 1.025 0 1.414l7.422 7.422-7.421 7.422c-.389.389-.389 1.025 0 1.414l1.359 1.359c.389.389 1.025.389 1.414 0l7.422-7.422 7.422 7.422c.389.389 1.025.389 1.414 0l1.359-1.359c.389-.389.389-1.025 0-1.414z" fill="#ee3643" />
+                    </svg>
+                </button>
+            <div class="modal-body">
+                <form action="http://echo.htmlacademy.ru" method="POST">
+                    <label>
+                        <p>Ваше имя:</p>
+                        <input type="text" required placeholder="Имя Фамилия" id="your-name" class="default-input your-name">
+                    </label>
+
+                    <label>
+                        <p>Ваш email:</p>
+                        <input type="text" required placeholder="email@example.com" id="your-email" class="default-input">
+                    </label>
+
+                    <label for="textarea">
+                        <p>Текст письма:</p>
+                    </label>
+                    <textarea name="" id="textarea" required placeholder="В свободной форме" class="default-input"></textarea>
+                    <button type="submit" class="red-btn">Отправить</button>
+                </form>
+            </div>
+        </div>
+        <div class="modal-overlay"></div>
+    </div>
+    <div class="modal-wrapper modal-map">
+        <div class="modal-content modal-show-map">
+                <button class="close-btn">
+                    <svg enable-background="new 0 0 21 21" height="21" viewBox="0 0 21 21" width="21" xmlns="http://www.w3.org/2000/svg">
+                        <path d="m13.273 10.5 7.422-7.422c.389-.389.389-1.025 0-1.414l-1.359-1.359c-.389-.389-1.025-.389-1.414 0l-7.422 7.422-7.422-7.422c-.389-.389-1.025-.389-1.414 0l-1.359 1.359c-.389.389-.389 1.025 0 1.414l7.422 7.422-7.421 7.422c-.389.389-.389 1.025 0 1.414l1.359 1.359c.389.389 1.025.389 1.414 0l7.422-7.422 7.422 7.422c.389.389 1.025.389 1.414 0l1.359-1.359c.389-.389.389-1.025 0-1.414z" fill="#ee3643" />
+                    </svg>
+                </button>
+            <div class="modal-body">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6036253003151!2d30.32085871621117!3d59.9387191690541!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1570562184019!5m2!1sru!2sru" width="100%" height="450px" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+            </div>
+        </div>
+        <div class="modal-overlay"></div>
+    </div>
+    <div class="modal-wrapper modal-wrapper-cart">
+        <div class="modal-cart">
+            <button class="close-btn close-cart" onclick="closeCartBtn">
+                    <svg enable-background="new 0 0 21 21" height="21" viewBox="0 0 21 21" width="21" xmlns="http://www.w3.org/2000/svg">
+                        <path d="m13.273 10.5 7.422-7.422c.389-.389.389-1.025 0-1.414l-1.359-1.359c-.389-.389-1.025-.389-1.414 0l-7.422 7.422-7.422-7.422c-.389-.389-1.025-.389-1.414 0l-1.359 1.359c-.389.389-.389 1.025 0 1.414l7.422 7.422-7.421 7.422c-.389.389-.389 1.025 0 1.414l1.359 1.359c.389.389 1.025.389 1.414 0l7.422-7.422 7.422 7.422c.389.389 1.025.389 1.414 0l1.359-1.359c.389-.389.389-1.025 0-1.414z" fill="#ee3643" />
+                    </svg>
+                </button>
+                <div class="modal-body">
+                    <div class="item-add-to-cart">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="66" height="66" viewBox="0 0 66 66"><circle fill="#63A63E" cx="33" cy="33" r="33"/><path fill="#FFF" d="M49.641 21.066a1.003 1.003 0 0 0-1.414 0L29.788 39.504a1.003 1.003 0 0 1-1.414 0l-8.14-8.139a1.003 1.003 0 0 0-1.414 0L15.285 34.9a1.003 1.003 0 0 0 0 1.414l13.089 13.09a1.003 1.003 0 0 0 1.414 0l3.536-3.536 1.414-1.414 18.438-18.438a1.003 1.003 0 0 0 0-1.414l-3.535-3.536z"/></svg>
+                        <p>Товар добавлен в корзину!</p>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <div class="button-group">
+                        <button class="red-btn half-btn">Оформить заказ</button><button class="button white-btn">Продолжить покупки</button>
+                    </div>
+                </div>
+        </div>
+                <div class="modal-overlay"></div>
+
+    </div>
+    <!-- cart-modal -->
+    <script type="text/javascript">
+        var showCart = document.querySelector(".add-to-cart");
+        var modalCart = document.querySelector(".modal-wrapper.modal-wrapper-cart");
+        var closeCartBtn = document.querySelector(".modal-wrapper-cart .close-cart");
+        var popupCartOverlay = document.querySelector(".modal-wrapper-cart .modal-overlay");
+
+        showCart.addEventListener("click", function(evt){
+            evt.preventDefault();
+            modalCart.classList.add("modal-show");
+        });
+        closeCartBtn.addEventListener("click", function(e){
+            e.preventDefault();
+            modalCart.classList.remove("modal-show");
+            console.log(modalCart.classList);
+        });
+        modalCart.addEventListener("click", function(evt){
+            evt.preventDefault();
+            modalCart.classList.add("modal-show");
+        });
+        popupCartOverlay.addEventListener("click", function(evt){
+            evt.preventDefault();
+            modalCart.classList.remove("modal-show");
+        });
+    </script>
+    <script type="text/javascript">
+        closeCartBtn.addEventListener("click", function(evt){
+            evt.preventDefault();
+            modalCart.classList.remove("modal-show");
+        });
+    </script>
+<!-- write-us-modal -->
+<script type="text/javascript">
+        var showModal = document.querySelector(".button-show-modal");
+        var popup = document.querySelector(".modal-wrapper.modal-form");
+        var closePopup = document.querySelector(".close-btn");
+        var popupOverlay = document.querySelector(".modal-overlay");
+        var focusName = document.querySelector(".your-name")
+        showModal.addEventListener("click", function(evt){
+            evt.preventDefault();
+            popup.classList.add("modal-show");
+            focusName.focus();
+
+        });
+        closePopup.addEventListener("click", function(evt){
+            evt.preventDefault();
+            popup.classList.remove("modal-show");
+        });
+        popupOverlay.addEventListener("click", function(evt){
+            evt.preventDefault();
+            popup.classList.remove("modal-show");
+        });
+    </script>
+    <!-- map-modal -->
+<script type="text/javascript">
+        var showMap = document.querySelector(".show-map-link");
+        var popupMap = document.querySelector(".modal-wrapper.modal-map");
+        var closePopupMap = document.querySelector(".modal-map .close-btn");
+        var popupOverlayMap = document.querySelector(".modal-map .modal-overlay");
+        showMap.addEventListener("click", function(evt){
+            evt.preventDefault();
+            popupMap.classList.add("modal-map-show");
+
+        });
+        closePopupMap.addEventListener("click", function(evt){
+            evt.preventDefault();
+            popupMap.classList.remove("modal-map-show");
+        });
+        popupOverlayMap.addEventListener("click", function(evt){
+            evt.preventDefault();
+            popupMap.classList.remove("modal-map-show");
+        });
+</script>
 </body>
 
 </html>
