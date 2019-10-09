@@ -40,7 +40,7 @@ header.top-menu{
 	text-transform: uppercase;
 	font-size: 28px;
 	color:#fff;
-	text-decoration: none !important;
+	text-decoration: none;
 	background-color: #ee3643;
 	position: relative;
 }
@@ -67,7 +67,7 @@ header.top-menu{
 	justify-content: space-between;
 }
 .top-navigation button{
-	font-family: 'Cuprum', Arial, sans-serif!important;
+	font-family: 'Cuprum', Arial, sans-serif;
 	font-size: 17px;
 }
 .top-navigation-input-search{
@@ -133,12 +133,12 @@ header.top-menu{
 }
 input,button{
 	transition: .2s;
-	outline:none!important;
+	outline:none;
 	margin: 0;
 	border:none;
 }
 button.ship-active{
-	margin: 0 !important;
+	margin: 0;
 	height: 100%;
 	background-color: #ee3643;
 }
@@ -333,7 +333,6 @@ width: 100%;
 	display: flex;
 	max-width: 360px;
 	padding: 0 15px;
-	margin-left: auto;
 }
 .login-icon{
 	fill:#fff;
@@ -352,7 +351,7 @@ width: 100%;
 	font-size: 21px;
 	font-weight: bold;
 	background-color: #fff;
-	padding:15px;
+	padding:10px 15px;
 	color:#000;
 }
 .autorization-block .login-link{
@@ -871,7 +870,7 @@ footer .categories-navigation li a:active{
 	height: 18px;
 }
 .breadcrumbs li:nth-child(1):hover svg g{
-	fill:#32425c!important;
+	fill:#32425c;
 	filter:opacity(100%);
 }
 .breadcrumbs li{
@@ -988,7 +987,7 @@ label input[type="checkbox"]:checked + .checkbox__text:after {
 	color:#fff;
 }
 .checkbox-group .disabled{
-	color:#a9a7a5!important;
+	color:#a9a7a5;
 }
 .checkbox-group label input{
 	margin-right: 16px;
@@ -1098,7 +1097,7 @@ button{
 }
 .item-title{
 	padding: 0 20px;
-	font-family: 'PT Sans', sans-serif!important;
+	font-family: 'PT Sans', 'Arial', sans-serif;
 	margin-top: 25px;
 	margin-bottom: 8px;
 	font-weight: bold;
