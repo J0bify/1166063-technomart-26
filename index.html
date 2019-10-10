@@ -341,7 +341,7 @@
                 </div>
                 <div class="modal-footer">
                     <div class="button-group">
-                        <button class="red-btn half-btn">Оформить заказ</button><button class="button white-btn">Продолжить покупки</button>
+                        <button class="red-btn half-btn">Оформить заказ</button><button class="button white-btn close-popup">Продолжить покупки</button>
                     </div>
                 </div>
         </div>
@@ -351,48 +351,10 @@
     <!-- cart-modal -->
     <script type="text/javascript" src="js/cart.js"></script>
 
-<!-- write-us-modal -->
-<script type="text/javascript">
-        var showModal = document.querySelector(".button-show-modal");
-        var popup = document.querySelector(".modal-wrapper.modal-form");
-        var closePopup = document.querySelector(".close-btn");
-        var popupOverlay = document.querySelector(".modal-overlay");
-        var focusName = document.querySelector(".your-name")
-        showModal.addEventListener("click", function(evt){
-            evt.preventDefault();
-            popup.classList.add("modal-show");
-            focusName.focus();
-
-        });
-        closePopup.addEventListener("click", function(evt){
-            evt.preventDefault();
-            popup.classList.remove("modal-show");
-        });
-        popupOverlay.addEventListener("click", function(evt){
-            evt.preventDefault();
-            popup.classList.remove("modal-show");
-        });
-    </script>
+<!-- form-modal -->
+<script type="text/javascript" src="js/form.js"></script>
     <!-- map-modal -->
-<script type="text/javascript">
-        var showMap = document.querySelector(".show-map-link");
-        var popupMap = document.querySelector(".modal-wrapper.modal-map");
-        var closePopupMap = document.querySelector(".modal-map .close-btn");
-        var popupOverlayMap = document.querySelector(".modal-map .modal-overlay");
-        showMap.addEventListener("click", function(evt){
-            evt.preventDefault();
-            popupMap.classList.add("modal-map-show");
-
-        });
-        closePopupMap.addEventListener("click", function(evt){
-            evt.preventDefault();
-            popupMap.classList.remove("modal-map-show");
-        });
-        popupOverlayMap.addEventListener("click", function(evt){
-            evt.preventDefault();
-            popupMap.classList.remove("modal-map-show");
-        });
-</script>
+<script type="text/javascript" src="js/map.js"></script>
 </body>
 
 </html>

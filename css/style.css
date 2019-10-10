@@ -1084,6 +1084,7 @@ button{
 	width: 100%;
 	max-width: 220px;
 	min-height: 320px;
+	background-color: #fff;
 	max-height: 320px;
 	border:1px solid #e5e5e5;
 }
@@ -1246,7 +1247,7 @@ button{
 }
 
 .modal-overlay{
-	background-color: rgba(0,0,0,0.2);
+	background-color: rgba(0,0,0,0.4);
 	position: fixed;
 	z-index: -1;
 	top: 0;
