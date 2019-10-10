@@ -1236,6 +1236,43 @@ button{
 	border-top:8px solid #ff5357;
 	box-shadow: 0 15px 45px rgba(0,0,0,0.6);
 }
+.popular-manufacters{
+	margin-bottom: 80px;
+}
+.brands-list{
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	list-style: none;
+	justify-content: space-between;
+	flex-wrap: wrap;
+}
+.brands-list li{
+	margin-bottom: 20px;
+	border:1px solid #eaeaea;
+	width: 220px;
+	height: 145px;
+}
+.brands-list a{
+	transition:.4s;
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 100%;
+	height: 100%;
+}
+.brands-list a:hover{
+	box-shadow: 0 15px 25px rgba(0,0,0,0.3);
+}
+.brands-list a:active{
+	box-shadow: 0 7px 15px rgba(0,0,0,0.2);	
+}
 .modal-wrapper{
 	display: none;
 	height: 100%;
