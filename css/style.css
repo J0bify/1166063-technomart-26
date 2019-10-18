@@ -907,9 +907,6 @@ footer{
 .breadcrumbs li:hover a{
 	color:#ee3643;
 }
-/*.breadcrumbs li:last-child{
-	color:#aba9a7;
-}*/
 .breadcrumbs li:last-child:after{
 	display: none;
 }
