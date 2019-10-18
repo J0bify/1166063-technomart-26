@@ -505,6 +505,7 @@ width: 100%;
     background-color: rgba(0, 0, 0, 0.1);
     border-radius: 3px;
 	text-transform: uppercase;
+	text-align: center;
 }
 .banner-info a:hover{
 	background-color: rgba(0, 0, 0, 0.2);
