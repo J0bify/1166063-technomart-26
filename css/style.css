@@ -256,6 +256,7 @@ background-color: #212a3a;
 }
 .top-navigation-menu-list{
 	width: 100%;
+	overflow: hidden;
 	display: -webkit-flex;
 	display: -moz-flex;
 	display: -ms-flex;
@@ -280,7 +281,7 @@ ul{
 	align-items: center;
 	min-height: 55px;
 	display: flex;
-	padding: 0 35px;
+	padding: 0 30px;
 	justify-content: center;
 	text-align: center;
 	line-height: 55px;
@@ -942,7 +943,7 @@ footer{
 	display: none;
 }
 #catalog{
-	background-color: #fff;
+	background-color: rgba(255,255,255,1);
 }
 .catalog-wrapper{
 	display: -webkit-flex;
