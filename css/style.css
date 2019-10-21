@@ -355,7 +355,7 @@ ul{
 	display: -ms-flex;
 	display: -o-flex;
 	display: flex;
-	width: 300px;
+	width: 315px;
 	justify-content: flex-end;
 }
 .autorization-wrapper{
@@ -365,6 +365,9 @@ ul{
 .login-icon{
 	fill:#fff;
 	filter: opacity(95%);
+}
+.login-link svg{
+	margin-right: 25px;
 }
 .login-link:hover .login-icon path{
 	fill:#32425c;
