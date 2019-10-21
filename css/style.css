@@ -46,7 +46,7 @@ header.top-menu{
 	justify-content: center;
 	align-items: center;
 	text-transform: uppercase;
-	font-size: 24px;
+	font-size: 30px;
 	color:#fff;
 	font-family: 'Cuprum', sans-serif;
 	text-decoration: none;
@@ -230,7 +230,8 @@ background-color: #212a3a;
 	fill:#32425c;
 }
 .profile-list-menu{
-	padding: 0px 10px;
+	margin: 0;
+	padding: 0px 25px;
 	display: -webkit-flex;
 	display: -moz-flex;
 	display: -ms-flex;
@@ -239,7 +240,6 @@ background-color: #212a3a;
 }
 .profile-list-menu li:first-child{
 		list-style: none;
-
 }
 .profile-list-menu li:last-child{
 	list-style: inside;
@@ -323,7 +323,6 @@ background-color: #212a3a;
 	margin-right: 8px;
 }
 .contacts-top-menu{
-	margin-top: 8px;
 	max-width: 320px;
 	text-align: center;
 	font-family: 'Cuprum', Arial, sans-serif;
@@ -612,7 +611,7 @@ p{
 	font-family: 'Cuprum', 'Arial', sans-serif;
 }
 .company-directions li{
-	margin-bottom: 16px;
+	margin-bottom: 21px;
 	font-size: 18px;
 	position: relative;
 	display: -webkit-flex;
@@ -919,6 +918,7 @@ width: 100%;
 	font-size: 28px;
 }
 .breadcrumbs{
+	padding-left: 0;
 	display: -webkit-flex;
 	display: -moz-flex;
 	display: -ms-flex;
@@ -1707,7 +1707,7 @@ button{
 	max-width: 200px;
 }
 .services-slider-list{
-	width: 700px;
+	width: 680px;
 	padding-left: 80px;
 }
 .services-slider-list .services-title{
@@ -1925,5 +1925,13 @@ button.toggle:before{
 	.user-name{
 			margin:0 15px;
 
+	}
+}
+@media only screen and (max-width:965px){
+	.instruments-slider-list .slider-item {
+		width: 612px;
+	}
+	.catalog-items{
+		width: 682px;
 	}
 }
