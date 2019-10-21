@@ -276,10 +276,6 @@ background-color: #212a3a;
 	list-style: none;
 	background-color: #32425c;
 }
-ul{
-	padding-left: 0;
-	margin: 0;
-}
 .menu-list-item{
 	width: 100%;
 }
@@ -410,7 +406,7 @@ ul{
 	fill:#c5c5c5;
 }
 .special-orders{
-	margin-top: 125px;
+	margin-top: 120px;
 	display: -webkit-flex;
 	display: -moz-flex;
 	display: -ms-flex;
@@ -440,6 +436,8 @@ ul{
 }
 .categories-banner-list{
 	width: 100%;
+	padding-left: 0;
+	margin: 0;
 	display: -webkit-flex;
 	display: -moz-flex;
 	display: -ms-flex;
@@ -531,8 +529,8 @@ ul{
 	top: 0;
 	z-index: 10;
 	color:#fff;
-	transform: rotate(36deg);
-	right: -25px;
+	transform: rotate(45deg);
+	right: -30px;
 }
 .banner-info{
 	width: 100%;
@@ -606,9 +604,11 @@ p{
 	max-width: 310px;
 }
 .section-description{
-	margin: 40px 0;
+	margin: 22px 0;
 }
 .company-directions{
+	padding-left: 0;
+	margin:33px 0;
 	font-family: 'Cuprum', 'Arial', sans-serif;
 }
 .company-directions li{
@@ -636,6 +636,9 @@ p{
 	filter: opacity(1);
 	transform:translateY(0);
 	visibility: visible;
+}
+.contacts-company .section-description{
+	margin-bottom: 40px;
 }
 .item-hidden-block{
 	transition:0.4s;
@@ -750,25 +753,29 @@ p{
 width: 100%;
 }
 .half-btn{
-width: 220px;
+	width: 220px;
 }
 .location{
-	margin-bottom: 27px;
+	margin-bottom: 40px;
 	display: block;
 	height: 160px;
 }
 .location img{
 	max-width: 100%;
 }
-footer{
+.footer-page{
 	color:#fff;
-	margin-top: 60px;
+	margin-top: 70px;
 }
-.footer-row p{
+.company-geo p{
+	margin-bottom: 8px;
+	font-size: 16px;
+}
+.footer-copyright p{
 	margin: 0;
 }
 .footer-navigation .logotype{
-	margin-bottom: 30px;
+	margin-bottom: 18px;
 	height: 65px;
 }
 .footer-navigation{
@@ -776,7 +783,7 @@ footer{
 	min-height: 190px;
 }
 .title-section{
-	margin: 23px 0;
+	margin: 30px 0;
     padding: 0 25px;
     min-height: 90px;
     background-color: #f9f5f0;
@@ -801,13 +808,19 @@ footer{
 	align-items: center;
 	display: flex;
 }
+.copyright{
+	margin-right: 43px;
+}
 .footer-nav ul{
 	list-style: none;
 }
 .footer-navigation li a{
-	padding:25px;
+	padding:30px;
 	color:#fff;
 	font-family: 'Cuprum', 'Arial', sans-serif;
+}
+.page-navigation{
+	margin-top: 30px;
 }
 .page-navigation:active{
 	color:#929caa;
@@ -825,7 +838,7 @@ footer{
 	text-decoration: underline;
 }
 .footer-copyright{
-	padding:30px 0;
+	padding:36px 0;
 	background-color: #293449;
 	min-height: 110px;
 }
@@ -844,6 +857,8 @@ footer{
 	text-decoration: none;
 }
 .social-links{
+	padding-left: 0;
+	margin: 0 45px;
 	display: -webkit-flex;
 	display: -moz-flex;
 	display: -ms-flex;
@@ -855,8 +870,8 @@ footer{
 	transition: .4s;
 	color:#fff;
 	margin: 5px;
-	width: 40px;
-	height: 40px;
+	width: 35px;
+	height: 35px;
 	display: -webkit-flex;
 	display: -moz-flex;
 	display: -ms-flex;
@@ -1313,6 +1328,8 @@ button{
 	margin-bottom: 130px;
 }
 .brands-list{
+	padding-left: 0;
+	margin: 0;
 	display: -webkit-flex;
 	display: -moz-flex;
 	display: -ms-flex;
@@ -1567,7 +1584,7 @@ button{
 	z-index: -1;
 }
 .services{
-	margin-bottom: 100px;
+	margin-bottom: 85px;
 }
 .slider-instruments-controls{
   z-index: 100;
@@ -1662,6 +1679,8 @@ button{
 	height: 268px;	
 }
 .instruments-slider-list{
+	padding-left: 0;
+	margin: 0;
 	list-style: none;
 }
 .instruments-slider-list .instruments-title,
@@ -1681,7 +1700,6 @@ button{
 }
 .services .slider-item{
 	min-height: 250px;
-	padding:20px 0;
 	overflow:hidden;
 	position: relative;
 }
@@ -1696,6 +1714,7 @@ button{
 	text-transform: uppercase;
 	color:#32425c;
 	font-size: 36px;
+	margin-bottom: 25px;
 }
 #services-1:checked ~ .services-slider-list .slider-item:nth-child(1) {
   display: block;
