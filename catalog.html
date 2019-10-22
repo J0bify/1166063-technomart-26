@@ -4,9 +4,8 @@
     <meta charset="utf-8">
     <title>Техномарт | Интернет-магазин строительных инструментов</title>
     <link href="https://fonts.googleapis.com/css?family=Cuprum:400,400i,700,700i|PT+Sans:400,400i,700,700i&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style.min.css">
 </head>
-
 <body>
     <header class="top-menu">
         <div class="top-navigation">
@@ -49,15 +48,10 @@
                     <a href="index.html" class="username-profile-link" title="Перейти в профиль">
                         <svg xmlns="http://www.w3.org/2000/svg" width="20" height="18" viewBox="0 0 20 18" class="user-icon icon">
                             <path d="M17.881 14.166c-2.144-.735-4.256-1.666-5.207-2.39-.657-.501-.77-1.618-.517-2.415 1.118-.903 1.864-2.477 1.864-4.278C14.021 2.276 12.221 0 10 0S5.979 2.276 5.979 5.083c0 1.801.746 3.374 1.863 4.277.253.798.141 1.915-.517 2.416-.95.724-3.063 1.654-5.207 2.39S0 18 0 18h20s.025-3.099-2.119-3.834z" />
-                        </svg><span>Равшан Джамшутович</span>
+                        </svg><span class="user-name">Равшан Джамшутович</span>
                     </a>
                     <a href="index.html" class="logout-link" title="Выйти">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="21" height="17" viewBox="0 0 21 17" class="logout-icon icon">
-                            <g fill="#c5c5c5">
-                                <path fill="#c5c5c5" d="M21 8.5L12.125 0v6h-6v5h6v6z" />
-                                <path fill="#c5c5c5" d="M3.106 13.952V3.048c.018-.376.171-1.057 1.01-1.057h5.027V0H4.116C1.938 0 1.112 1.81 1.087 3.027v10.946C1.112 15.189 1.938 17 4.116 17h5.027v-1.99H4.116c-.839 0-.992-.683-1.01-1.058z" />
-                            </g>
-                        </svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="21" height="17" viewBox="0 0 21 17"><g fill="#c5c5c5"><path fill="#c5c5c5" d="M21 8.5L12.125 0v6h-6v5h6v6z"/><path fill="#c5c5c5" d="M3.106 13.952V3.048c.018-.376.171-1.057 1.01-1.057h5.027V0H4.116C1.938 0 1.112 1.81 1.087 3.027v10.946C1.112 15.189 1.938 17 4.116 17h5.027v-1.99H4.116c-.839 0-.992-.683-1.01-1.058z"/></g></svg>
                     </a>
                 </div>
                 <ul class="profile-list-menu">
@@ -98,6 +92,7 @@
             </ul>
             <h2 class="page-title">Перфораторы</h2>
             <section class="catalog-wrapper">
+                <h2 class="visually-hidden">Каталог товаров</h2>
                 <aside class="left-side">
                     <form action="http://echo.htmlacademy.ru" method="POST" class="left-side-form">
                         <div class="filter-group">
@@ -117,11 +112,11 @@
                                 </div>
                                 <div class="range-inputs">
                                     <label class="range-label min-range-label">
-                                        <input type="text" value="0" name="min-range-text" aria-label="Поле для ввода минимального значения">
+                                        <input type="text" value="0" name="min-range-text" aria-label="Поле для ввода минимального значения" id="min-range-input">
                                     </label>
-                                    <label for="min-range-text">—</label>
+                                    <label for="min-range-input">—</label>
                                     <label class="range-label max-range-label">
-                                        <input type="text" value="30000" name="max-range-text" aria-label="Поле для ввода максимального значения">
+                                        <input type="text" value="30000" name="max-range-text" aria-label="Поле для ввода максимального значения" id="max-range-input">
                                     </label>
                                 </div>
                             </div>
@@ -156,6 +151,7 @@
                     </form>
                 </aside>
                 <section class="catalog-items">
+                    <h2 class="visually-hidden">Каталог товаров</h2>
                     <div class="filter-group">
                         <span>Сортировка:</span>
                         <ul class="filter-sort-list">
@@ -179,7 +175,6 @@
                         </ul>
                     </div>
                     <article class="item new-item">
-                        <a href="#" class="item-link">
                             <div class="item-hidden-block">
                                 <a href="#" class="add-to-cart item-button">
                                     <svg class="cart-icon icon">
@@ -190,7 +185,6 @@
                                 <button class="button item-button add-to-bookmark">В закладки</button>
                             </div>
                             <img src="img/perforator.png" alt="Перфоратор BOSCH BFG 3000" title="Перфоратор BOSCH BFG 3000" width="220" height="180">
-                        </a>
                         <h3 class="item-title"><a href="#" title="Перфоратор BOSCH BFG 3000">Перфоратор <q>BOSCH BFG 3000</q></a></h3>
                         <div class="item-price">
                             <span class="old-price"><del>22500 ₽</del></span>
@@ -198,7 +192,6 @@
                         </div>
                     </article>
                     <article class="item">
-                        <a href="#" class="item-link">
                             <div class="item-hidden-block">
                                 <a href="#" class="add-to-cart item-button">
                                     <svg class="cart-icon icon">
@@ -209,7 +202,6 @@
                                 <button class="button item-button add-to-bookmark">В закладки</button>
                             </div>
                             <img src="img/perforator.png" alt="Перфоратор BOSCH BFG 3000" title="Перфоратор BOSCH BFG 3000" width="220" height="180">
-                        </a>
                         <h3 class="item-title"><a href="#" title="Перфоратор BOSCH BFG 3000">Перфоратор <q>BOSCH BFG 3000</q></a></h3>
                         <div class="item-price">
                             <span class="old-price"><del>22500 ₽</del></span>
@@ -217,7 +209,6 @@
                         </div>
                     </article>
                     <article class="item">
-                        <a href="#" class="item-link">
                             <div class="item-hidden-block">
                                 <a href="#" class="add-to-cart item-button">
                                     <svg class="cart-icon icon">
@@ -228,7 +219,6 @@
                                 <button class="button item-button add-to-bookmark">В закладки</button>
                             </div>
                             <img src="img/perforator.png" alt="Перфоратор BOSCH BFG 3000" title="Перфоратор BOSCH BFG 3000" width="220" height="180">
-                        </a>
                         <h3 class="item-title"><a href="#" title="Перфоратор BOSCH BFG 3000">Перфоратор <q>BOSCH BFG 3000</q></a></h3>
                         <div class="item-price">
                             <span class="old-price"><del>22500 ₽</del></span>
@@ -236,7 +226,6 @@
                         </div>
                     </article>
                     <article class="item">
-                        <a href="#" class="item-link">
                             <div class="item-hidden-block">
                                 <a href="#" class="add-to-cart item-button">
                                     <svg class="cart-icon icon">
@@ -247,7 +236,6 @@
                                 <button class="button item-button add-to-bookmark">В закладки</button>
                             </div>
                             <img src="img/perforator.png" alt="Перфоратор BOSCH BFG 3000" title="Перфоратор BOSCH BFG 3000" width="220" height="180">
-                        </a>
                         <h3 class="item-title"><a href="#" title="Перфоратор BOSCH BFG 3000">Перфоратор <q>BOSCH BFG 3000</q></a></h3>
                         <div class="item-price">
                             <span class="old-price"><del>22500 ₽</del></span>
@@ -268,7 +256,7 @@
             </section>
         </div>
     </main>
-    <footer>
+    <footer class="footer-page">
         <div class="footer-navigation">
             <div class="container">
                 <div class="footer-row">
@@ -359,7 +347,7 @@
         <div class="modal-overlay"></div>
 
     </div>
-    <script type="text/javascript" src="js/scripts.js"></script>
+    <script type="text/javascript" src="js/scripts.min.js"></script>
 </body>
 
 </html>
