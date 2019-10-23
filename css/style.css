@@ -18,14 +18,15 @@
 body{
 	margin: 0;
 	font-family: 'Cuprum', Arial, sans-serif;
-	background-color: #f3f7f9;
+	background-color: #fff;
 }
 a{
 	text-decoration: none;
 }
 header.top-menu{
+	background-color: #f3f7f9;
 	width: 100%;
-	margin-bottom: 60px;
+	padding-bottom: 60px;
 }
 .top-navigation{
 	height:42px;
@@ -415,7 +416,7 @@ background-color: #212a3a;
 	fill:#c5c5c5;
 }
 .special-orders{
-	margin-top: 122px;
+	margin-top: 62px;
 	margin-bottom: 52px;
 	display: -webkit-flex;
 	display: -moz-flex;
@@ -976,7 +977,7 @@ width: 100%;
 	display: -o-flex;
 	list-style: none;
 	display: flex;
-	padding-top: 20px;
+	padding-top: 4px;
 	margin-bottom: 8px;
 	background-color: #fff;
 }
@@ -1384,7 +1385,7 @@ button{
 	box-shadow: 0 15px 45px rgba(0,0,0,0.6);
 }
 .popular-manufacters{
-	margin-bottom: 130px;
+	margin-bottom: 110px;
 }
 .brands-list{
 	padding-left: 0;
@@ -1651,11 +1652,13 @@ button{
     position: absolute;
     right: -18px;
     top: 27px;
+    max-height: 230px;
     max-width: 475px;
-    z-index: -1;
 }
 .services{
-	margin-bottom: 85px;
+	overflow: hidden;
+	background-color: #f3f7f9;
+	margin-bottom: 60px;
 }
 .slider-instruments-controls{
   z-index: 10;
@@ -1773,7 +1776,7 @@ button{
 	font-size: 14px;
 }
 .services .slider-item{
-	min-height: 250px;
+	min-height: 275px;
 	position: relative;
 }
 .shipping-slide .services-item-text:nth-child(1){
