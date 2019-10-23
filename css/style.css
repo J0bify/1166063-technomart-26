@@ -220,6 +220,10 @@ background-color: #212a3a;
 	background-color: #518534;
 	color:#91b27f;
 }
+.autorization-block a.username-profile-link,
+ .autorization-block a.logout-link{
+	padding-top: 0;
+}
 .username-profile-link svg{
 	fill:#c5c5c5;
 	margin-left: 35px;
@@ -349,6 +353,7 @@ background-color: #212a3a;
 	display: block;
 	border:4px solid #fff;
 	color:#ee3643;
+	margin-right: 12px;
 	font-size: 21px;
 }
 .autorization-block{
@@ -379,6 +384,7 @@ background-color: #212a3a;
 	padding: 25px;
 }
 .autorization-block a{
+	padding-top: 30px;
 	align-items: center;
 	display: flex;
 	justify-content: space-around;
@@ -611,6 +617,10 @@ p{
 }
 .about-company .section-title{
 	margin: 14px 0;
+	font-size: 28px;
+}
+.about-company .section-text{
+	line-height: 8px;
 }
 .contacts-company{
 	padding-left: 10px;
@@ -626,14 +636,14 @@ p{
 	margin: 15px 0;
 }
 .section-description{
-	margin-top: 22px;
+	margin-top: 26px;
 	line-height: 24px;
-	margin-bottom: 26px;
+	margin-bottom: 30px;
 }
 .company-directions{
 	padding-left: 0;
-	margin-top: 18px;
-	margin-bottom: 36px;
+	margin-top: 22px;
+	margin-bottom: 38px;
 	font-family: 'Cuprum', 'Arial', sans-serif;
 }
 .company-directions li{
@@ -781,7 +791,7 @@ width: 100%;
 	width: 220px;
 }
 .location{
-	margin-bottom: 40px;
+	margin-bottom: 36px;
 	display: block;
 	height: 160px;
 }
@@ -839,7 +849,7 @@ width: 100%;
 	display: flex;
 }
 .copyright{
-	margin-right: 72px;
+	margin-right: 70px;
 }
 .footer-nav ul{
 	list-style: none;
@@ -1050,7 +1060,7 @@ width: 100%;
 	font-family: 'PT Sans', Arial, sans-serif;
 	display: block;
 	text-transform: uppercase;
-	margin-bottom: 14px;
+	margin-bottom: 20px;
 	font-size: 15px;
 }
 .checkbox-group input[type="checkbox"]{
@@ -1169,7 +1179,7 @@ label input[type="checkbox"]:checked + .checkbox-text:after {
 	font-size: 17px;
 	font-family: 'PT Sans';
 	text-transform: uppercase;
-	margin-bottom: 20px;
+	margin-bottom: 18px;
 	font-weight: bold;
 }
 button{
@@ -1243,6 +1253,7 @@ button{
 	color:#000;
 }
 .item img{
+	padding-top: 10px;
 	max-height: 150px;
 	width: 100%;
 	height: 100%;
@@ -1295,6 +1306,7 @@ button{
     border-left: 20px solid rgba(238,54,67,1);
 }
 .pagination{
+    transform: translate(-43px,10px);
 	margin-top: 36px;
 	width: 100%;
 	display: -webkit-flex;
@@ -1310,7 +1322,7 @@ button{
 .pagination a{
 	transition: .2s;
 	background-color: #fff;
-	padding: 15px;
+	padding: 10px 15px;
 	text-decoration: none;
 	color:#000;
 	border:1px solid #e5e5e5;
@@ -1339,7 +1351,7 @@ button{
 	background-color: #e5e5e5;
 }
 .description{
-	margin-top: 36px;
+	margin-top: 125px;
 }
 .contacts-company p{
 	max-width: 70%;
@@ -1463,11 +1475,11 @@ button{
 	padding: 0;
 }
 .left-side-form fieldset.brands-group{
-	margin-bottom: 55px;
+	margin-bottom: 28px;
 	margin-top: 10px;
 }
 .left-side-form .categories-group{
-	margin-bottom: 32px;
+	margin-bottom: 14px;
 }
 .write-form .textarea{
 	margin-bottom: 30px;
@@ -1594,8 +1606,14 @@ button{
 	display: flex;
 	flex-wrap: wrap;
 }
+.services .section-title{
+	margin-bottom: 24px;
+}
+.services p{
+	line-height: 13px;
+}
 .services .slider-controls{
-	padding:55px 0;
+	padding:57px 0;
 	position: relative;
 	max-width: 240px;
 }
@@ -1760,7 +1778,7 @@ button{
 }
 .shipping-slide .services-item-text:nth-child(1){
 	line-height: 23px;
-	margin-bottom: 5px;
+	margin-bottom: 0px;
 }
 .shipping-slide .services-item-text:nth-child(2){
 	max-width: 200px;
@@ -1774,7 +1792,9 @@ button{
 .services-slider-list .services-title{
 	text-transform: uppercase;
 	color:#32425c;
+	letter-spacing: -1px;
 	font-size: 36px;
+	margin-top: 41px;
 	margin-bottom: 25px;
 }
 #services-1:checked ~ .services-slider-list .slider-item:nth-child(1) {
@@ -1931,7 +1951,7 @@ button.toggle:before{
 	padding: 15px;
 }
 .range-inputs{
-	margin-bottom: 26px;
+	margin-bottom: 28px;
 }
 .filter-range{
 	border-bottom: 1px solid #e5e5e5;
@@ -1985,6 +2005,9 @@ button.toggle:before{
 @media screen and (-webkit-min-device-pixel-ratio:0) {
 	.search-group label{
 		top:10px;
+	}
+	.login-link svg{
+		margin-right: 15px;
 	}
 	.top-navigation-menu-list{
 	width: 100%;
