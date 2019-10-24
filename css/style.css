@@ -20,6 +20,7 @@ html {
 }
 
 body {
+	min-width: 980px;
 	margin: 0;
 	font-family: 'Cuprum', 'Arial', 'sans-serif';
 	background-color: #fff;
@@ -1081,7 +1082,7 @@ p {
 .social-link {
 	transition: 0.4s;
 	color: #fff;
-	margin: 5px;
+	margin: 2px;
 	width: 40px;
 	height: 40px;
 	display: -webkit-flex;
@@ -1879,6 +1880,7 @@ button {
 }
 
 .services-slider {
+	min-height:350px;
 	display: -webkit-flex;
 	display: -moz-flex;
 	display: -ms-flex;
@@ -2110,6 +2112,7 @@ button {
 }
 
 .guarantee-slide .services-title {
+	font-style: italic;
 	font-family: 'PT Sans', 'Arial', 'sans-serif';
 	letter-spacing: 1px;
 	margin-bottom: 20px;
