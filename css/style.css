@@ -995,7 +995,6 @@ p {
 .popular-products {
 	margin-bottom: 3px;
 }
-
 .title-section a {
 	width: 254px;
 }
@@ -1457,8 +1456,14 @@ button {
 
 .popular-products .catalog-items {
 	width: 100%;
+	justify-content: flex-start;
 }
-
+.popular-products .item{
+	margin-right:20px;
+}
+.popular-products .item:nth-child(4n+1){
+	margin-right: 0;
+}
 .catalog-items {
 	width: 700px;
 	display: -webkit-flex;
@@ -1684,17 +1689,20 @@ button {
 	display: -o-flex;
 	display: flex;
 	list-style: none;
-	justify-content: space-between;
+	justify-content: flex-start;
 	flex-wrap: wrap;
 }
 
 .brands-list li {
+	margin-right: 20px;
 	margin-bottom: 20px;
 	border: 1px solid #eaeaea;
 	width: 220px;
 	height: 145px;
 }
-
+.brands-list li:nth-child(4n){
+	margin-right: 0;
+}
 .brands-list a {
 	transition: 0.4s;
 	display: -webkit-flex;
