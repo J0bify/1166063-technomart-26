@@ -2401,7 +2401,12 @@ button {
 	color: #32425c;
 	border-top: 1px solid #ffffff;
 }
-
+.instruments-1:focus~.slider-instruments-controls .slider-controls-item-1,
+.instruments-2:focus~.slider-instruments-controls .slider-controls-item-2 {
+	outline-width: 2px;
+	outline-style: solid;
+	outline-color: Highlight;
+}
 .services-1:focus~.slider-controls .slider-controls-item-1,
 .services-2:focus~.slider-controls .slider-controls-item-2,
 .services-3:focus~.slider-controls .slider-controls-item-3 {
