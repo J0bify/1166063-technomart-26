@@ -47,12 +47,12 @@
             </div>
             <div class="autorization-wrapper">
                 <div class="autorization-block user-profile-block">
-                    <a href="index.html" class="username-profile-link" title="Перейти в профиль">
+                    <a href="profile.html" class="username-profile-link" title="Перейти в профиль">
                         <svg xmlns="http://www.w3.org/2000/svg" width="20" height="18" viewBox="0 0 20 18" class="user-icon icon">
                             <path d="M17.881 14.166c-2.144-.735-4.256-1.666-5.207-2.39-.657-.501-.77-1.618-.517-2.415 1.118-.903 1.864-2.477 1.864-4.278C14.021 2.276 12.221 0 10 0S5.979 2.276 5.979 5.083c0 1.801.746 3.374 1.863 4.277.253.798.141 1.915-.517 2.416-.95.724-3.063 1.654-5.207 2.39S0 18 0 18h20s.025-3.099-2.119-3.834z" />
                         </svg><span class="user-name">Равшан Джамшутович</span>
                     </a>
-                    <a href="index.html" class="logout-link" title="Выйти">
+                    <a href="logout.html" class="logout-link" title="Выйти">
                         <svg xmlns="http://www.w3.org/2000/svg" width="21" height="17" viewBox="0 0 21 17">
                             <g fill="#c5c5c5">
                                 <path fill="#c5c5c5" d="M21 8.5L12.125 0v6h-6v5h6v6z" />
@@ -83,7 +83,7 @@
         <div class="container">
 
             <ul class="breadcrumbs">
-                <li>
+                <li class="breadcrumbs-item">
                     <a href="index.html" title="На главную">
                         <svg xmlns="http://www.w3.org/2000/svg" width="15" height="12" viewBox="0 0 15 12">
                             <g fill="#C1C6CE">
@@ -93,9 +93,9 @@
                         </svg>
                     </a>
                 </li>
-                <li><a href="#">Каталог</a></li>
-                <li><a href="#">Инструмент</a></li>
-                <li><a href="#">Перфораторы</a></li>
+                <li class="breadcrumbs-item"><a href="#">Каталог</a></li>
+                <li class="breadcrumbs-item"><a href="#">Инструмент</a></li>
+                <li class="breadcrumbs-item"><a href="#">Перфораторы</a></li>
             </ul>
             <h2 class="page-title">Перфораторы</h2>
             <section class="catalog-wrapper">
@@ -132,15 +132,15 @@
                             <legend>Производители:</legend>
                             <div class="checkbox-group">
                                 <label for="1">
-                                    <input type="checkbox" id="1" name="Bosch" aria-label="Производитель товара"><span class="checkbox-text">Bosch</span></label>
+                                    <input type="checkbox" id="1" class="visually-hidden" name="Bosch" checked aria-label="Производитель товара"><span class="checkbox-text">Bosch</span></label>
                                 <label for="2">
-                                    <input type="checkbox" id="2" name="Interskol" aria-label="Производитель товара"><span class="checkbox-text">Интерскол</span></label>
+                                    <input type="checkbox" id="2" class="visually-hidden" name="Interskol" aria-label="Производитель товара"><span class="checkbox-text">Интерскол</span></label>
                                 <label for="3">
-                                    <input type="checkbox" id="3" name="Makita" aria-label="Производитель товара"><span class="checkbox-text">Makita</span></label>
+                                    <input type="checkbox" id="3"class="visually-hidden"  name="Makita" aria-label="Производитель товара"><span class="checkbox-text">Makita</span></label>
                                 <label for="4">
-                                    <input type="checkbox" id="4" name="Dewalt" aria-label="Производитель товара"><span class="checkbox-text">Dewalt</span></label>
+                                    <input type="checkbox" id="4" class="visually-hidden" name="Dewalt" aria-label="Производитель товара"><span class="checkbox-text">Dewalt</span></label>
                                 <label for="5" class="disabled-checkbox">
-                                    <input type="checkbox" id="5" name="Hitachi" disabled aria-label="Производитель товара"><span class="checkbox-text">Hitachi</span></label>
+                                    <input type="checkbox" id="5" class="visually-hidden" name="Hitachi" disabled aria-label="Производитель товара"><span class="checkbox-text">Hitachi</span></label>
                             </div>
                         </fieldset>
                         <fieldset class="categories-group">
